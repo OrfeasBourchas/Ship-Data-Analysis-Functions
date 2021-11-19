@@ -37,7 +37,6 @@ def number_of_Trips(df, column, starting_value, lastday):
 
 
 
-    df.iloc[df.iloc[:,column] < starting_value, column] = 0  
     df.insert(len(df.columns), 'Trip', np.zeros(len(df)))
     
     trip = 0
